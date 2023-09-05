@@ -44,27 +44,29 @@ const DataTable = ({ data, columns }) => {
     return (
         <section className='tableGridWhole'>
             <div className='tableGridSearch'></div>
-            <table className='tableGrid'>
-                <thead className='tableGridHead'>
-                    <tr className='tableGridHeadRow'>
-                        {columns.map((column, index) => (
-                            <th key={index} className='tableGridHeadColumn'>{column.header}</th>
-                        ))}
-                    </tr>
-                </thead>
-                <tbody className='tableGridBody'>
-                    {orderedData[page] && orderedData[page].map((row, rowIndex) => (
-                        <tr key={rowIndex} className='tableGridBodyRow'>
-                            {columns.map((column, colIndex) => (
-                                <td key={colIndex} className='tableGridBodyColumn'>{row[column.field]}</td>
+            <div className='tableGridScroll'>
+                <table className='tableGrid'>
+                    <thead className='tableGridHead'>
+                        <tr className='tableGridHeadRow'>
+                            {columns.map((column, index) => (
+                                <th key={index} className='tableGridHeadColumn'>{column.header}</th>
                             ))}
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody className='tableGridBody'>
+                        {orderedData[page] && orderedData[page].map((row, rowIndex) => (
+                            <tr key={rowIndex} className='tableGridBodyRow'>
+                                {columns.map((column, colIndex) => (
+                                    <td key={colIndex} className='tableGridBodyColumn'>{row[column.field]}</td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
             <div className='tableGridPagination'>
-                <div><p>{data.length} Total</p></div>
-                <div>
+
+                    <div><p>{data.length} Total</p></div>
                     <div>
                         <button onClick={() => handlePageChange(0)}>
                             <BiFirstPage className='tableGridIcon' />
@@ -98,7 +100,6 @@ const DataTable = ({ data, columns }) => {
                     </div>
 
                 </div>
-            </div>
         </section>
     );
 };

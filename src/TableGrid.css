@@ -1,5 +1,11 @@
 .tableGridWhole {
   margin: auto;
+  overflow: hidden;
+}
+
+.tableGridScroll {
+  overflow-x: auto;
+  border: 0.1rem solid #e3e6e9;
 }
 
 .tableGridSearch {
@@ -9,9 +15,6 @@
   background-color: #f5f7f9;
   width: 100%;
   padding: 1%;
-  border: 0.1rem solid #e3e6e9;
-  overflow-x: auto;
-  overflow-y: auto;
   border-collapse: collapse;
 }
 
@@ -31,6 +34,7 @@
 }
 
 .tableGridBody {
+    overflow-y: scroll;
 }
 
 .tableGridBodyRow {
@@ -85,7 +89,7 @@
 }
 
 .tableGridPagination div:nth-child(2) div {
-  margin:0 1rem;
+  margin: 0 1rem;
 }
 
 .tableGridForm {

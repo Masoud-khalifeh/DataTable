@@ -5,7 +5,7 @@ import {FakedData} from './FakedData';
 const App = () => {
 
   return (
-    <div style={{width:"90%",height:"80vh", margin:"auto"}}>
+    <div style={{width:"90%",height:"500px", margin:"auto"}}>
       <h1>Sample Data Table</h1>
       <TableGrid data={FakedData.data} columns={FakedData.column} />
     </div>
