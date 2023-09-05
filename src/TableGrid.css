@@ -1,0 +1,99 @@
+.tableGridWhole {
+  margin: auto;
+}
+
+.tableGridSearch {
+}
+
+.tableGrid {
+  background-color: #f5f7f9;
+  width: 100%;
+  padding: 1%;
+  border: 0.1rem solid #e3e6e9;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.tableGridHead {
+  background-color: inherit;
+}
+
+.tableGridHeadRow {
+  padding: 3% 1rem;
+}
+
+.tableGridHeadColumn {
+  padding: 2% 1rem;
+  white-space: nowrap;
+  text-align: left;
+  border: 0.1rem solid #e3e6e9;
+}
+
+.tableGridBody {
+}
+
+.tableGridBodyRow {
+  background-color: white;
+  border-bottom: 0.15rem solid #e3e6e9;
+}
+
+.tableGridBodyColumn {
+  padding: 2% 1rem;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.tableGridPagination {
+  color: grey !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tableGridPagination button {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: none;
+  border: none;
+  font-size: medium;
+  color:gray;
+}
+
+.tableGridPagination .tableGridPaginationSelected {
+    background-color: rgb(189, 182, 182) ;
+    color: black ;
+  }
+.tableGridIcon {
+  font-size: large;
+}
+
+.tableGridPagination div {
+  padding: 0 5%;
+}
+
+.tableGridPagination div:nth-child(1) {
+  display: flex;
+  flex-flow: row;
+  width: 30%;
+}
+
+.tableGridPagination div:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.tableGridForm {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tableGridSelect {
+  width: 30%;
+  background: none;
+  border: 0.1 solid gray;
+  padding: 1%;
+  margin-left: 5%;
+}
