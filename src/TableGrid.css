@@ -11,6 +11,7 @@
   padding: 1%;
   border: 0.1rem solid #e3e6e9;
   overflow-x: auto;
+  overflow-y: auto;
   border-collapse: collapse;
 }
 
@@ -57,13 +58,13 @@
   background: none;
   border: none;
   font-size: medium;
-  color:gray;
+  color: gray;
 }
 
 .tableGridPagination .tableGridPaginationSelected {
-    background-color: rgb(189, 182, 182) ;
-    color: black ;
-  }
+  background-color: rgb(189, 182, 182);
+  color: black;
+}
 .tableGridIcon {
   font-size: large;
 }
@@ -75,14 +76,16 @@
 .tableGridPagination div:nth-child(1) {
   display: flex;
   flex-flow: row;
-  width: 30%;
 }
 
 .tableGridPagination div:nth-child(2) {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 50%;
+}
+
+.tableGridPagination div:nth-child(2) div {
+  margin:0 1rem;
 }
 
 .tableGridForm {
@@ -91,9 +94,9 @@
 }
 
 .tableGridSelect {
-  width: 30%;
+  width: 10rem;
   background: none;
   border: 0.1 solid gray;
-  padding: 1%;
-  margin-left: 5%;
+  padding: 3%;
+  margin-left: 3%;
 }
